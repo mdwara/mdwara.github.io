@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(to bottom, #161515, #eee); 
+}
+
+.position{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.position button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 132, 196, 0.8);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #151716;
+    width: 95%;
+}
+  
+.close {
+    color: #1a1919;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+  
+.close:hover {
+    color: rgba(136, 116, 116, 0.101);
+}
+  
