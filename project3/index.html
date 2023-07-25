@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game App: Guess My Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+        <h1>GUESS MY NUMBER</h1>
+        <p>Guess the number between 1 and 100</p>
+    </div>
+    <div class="mainbox">
+        <div class="score">
+            <div class="left">
+                <p>Score: <span id="score">10</span></p>
+                <p>High Score: <span id="highScore">0</span></p>
+            </div>
+            <div class="right">
+                <button class="reset-button" onclick="resetGame()">Reset</button>
+            </div>
+        </div>
+        <div class="midbox">
+            <img width="30%" height="30%" src="cartoon.png" alt="image">
+            <br>
+            <input type="number" id="userGuess">
+            <br>
+            <button class="btn clr" onclick="checkGuess()">Check</button>
+            <br>
+            <p id="hintMessage">Guess a Number</p>
+        </div>
+        <br>
+        <div class="btmbox">
+            <p> Guess History:</p>
+            <br>
+            <ul id="guessHistory">
+                
+            </ul>
+        </div>
+        <br>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
