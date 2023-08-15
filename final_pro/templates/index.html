@@ -9,14 +9,14 @@
 <body>
     <div class="container">
         <h1>Collecting Weight and Height For BMI</h1>
-        <h2>Please fill the entires to get populations statistics on Weight, Height and BMI</h2>
+        <h2>Please fill in the entires to get populations statistics on Weight, Height, and BMI</h2>
         <form class="" action="{{url_for('thankyou')}}" method="POST">
             <label for="email"> Email:</label>
             <input name="email_name" id="email" type="email" required placeholder="Enter your Email">
             <br>
             <br>
             <label for="height">Height:</label>
-            <input name="height_name" id="height" type="number"  step="0.01" min="0.85" max="2.5" placeholder="Enter your Height in Meter"></input>
+            <input name="height_name" id="height" type="number"  step="1" min="85" max="250" placeholder="Enter your Height in centimeter"></input>
             <br>
             <br>
             <label for="weight">Weight:</label>
